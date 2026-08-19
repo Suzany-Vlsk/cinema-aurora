@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Aurora - Programação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1> Cinema Aurora</h1>
+    <p>Seu cinema, sua experiência.</p>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="classificacao.html">Classificação</a>
+        <a href="avaliacao.html">Avaliação</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h2>Programação do Dia</h2>
+        <p>Confira os filmes e horários disponíveis hoje.</p>
+    </section>
+
+    <section>
+        <h2>Filmes em Cartaz</h2>
+
+        <div class="cards">
+
+            <article class="card">
+                <img src="imagens/filme1.jpg" alt="Devoradores de Estrela">
+                <h3>Devoradores de Estrelas</h3>
+                <p>Ficção Cientifica</p>
+                <span>Classificação: 13 anos</span>
+            </article>
+
+            <article class="card">
+                <img src="imagens/filme2.jpg" alt="O Eternauta">
+                <h3>O Eternauta</h3>
+                <p>Ficção Cientifica / Drama</p>
+                <span>Classificação: 16 anos</span>
+            </article>
+
+            <article class="card">
+                <img src="imagens/filme3.jpg" alt="Star Wars">
+                <h3>Star Wars</h3>
+                <p>Ação / Aventura</p>
+                <span>Classificação: 14 anos</span>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="painel">
+        <h2>Programação</h2>
+
+        <button onclick="mostrarProgramacao()">
+            Mostrar programação
+        </button>
+
+        <p id="programacao"></p>
+    </section>
+
+    <section class="painel">
+        <h2>Destaque por período</h2>
+
+        <label for="periodo">Escolha um período:</label>
+
+        <select id="periodo">
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+        </select>
+
+        <button onclick="mostrarDestaque()">
+            Ver destaque
+        </button>
+
+        <div id="destaque" class="resultado">
+            Escolha um período para ver o destaque.
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>2026 - Cinema Aurora</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
