@@ -1,11 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Cinema Aurora - Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
-    
+
+    <header>
+
+        <h1> Cinema<span>Aurora</span></h1>
+
+        <p>Seu cinema, sua experiência.</p>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="classificacao.html">Classificação</a>
+            <a href="avaliacao.html">Avaliação</a>
+            <a href="quiz.html">Quiz</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <h2>Quiz de Cinema</h2>
+
+            <p>
+                Teste seus conhecimentos sobre cinema.
+            </p>
+
+        </section>
+
+
+        <section class="formulario">
+
+            <label for="pergunta1">
+                1. Qual filme apresenta o personagem Darth Vader?
+            </label>
+
+            <select id="pergunta1">
+
+                <option value="">
+                    Escolha uma resposta
+                </option>
+
+                <option value="correta">
+                    Star Wars
+                </option>
+
+                <option value="errada">
+                    O Eternauta
+                </option>
+
+                <option value="errada">
+                    Devoradores de Estrelas
+                </option>
+
+            </select>
+
+
+            <label for="pergunta2">
+                2. Qual é uma das principais áreas de produção de um filme?
+            </label>
+
+            <select id="pergunta2">
+
+                <option value="">
+                    Escolha uma resposta
+                </option>
+
+                <option value="errada">
+                    Meteorologia
+                </option>
+
+                <option value="correta">
+                    Direção
+                </option>
+
+                <option value="errada">
+                    Agricultura
+                </option>
+
+            </select>
+
+
+            <label for="pergunta3">
+                3. Qual elemento é responsável pela música de um filme?
+            </label>
+
+            <select id="pergunta3">
+
+                <option value="">
+                    Escolha uma resposta
+                </option>
+
+                <option value="errada">
+                    Figurino
+                </option>
+
+                <option value="errada">
+                    Cenografia
+                </option>
+
+                <option value="correta">
+                    Trilha sonora
+                </option>
+
+            </select>
+
+
+            <label for="pergunta4">
+                4. Em que local normalmente assistimos a filmes em uma tela grande?
+            </label>
+
+            <select id="pergunta4">
+
+                <option value="">
+                    Escolha uma resposta
+                </option>
+
+                <option value="correta">
+                    Cinema
+                </option>
+
+                <option value="errada">
+                    Biblioteca
+                </option>
+
+                <option value="errada">
+                    Supermercado
+                </option>
+
+            </select>
+
+
+            <button onclick="corrigirQuiz()">
+                Corrigir quiz
+            </button>
+
+
+            <div id="resultadoQuiz" class="resultado">
+                Sua pontuação aparecerá aqui.
+            </div>
+
+        </section>
+
+
+        <section class="painel">
+
+            <h2>Curiosidade de Cinema</h2>
+
+            <button onclick="mostrarCuriosidade()">
+                Mostrar curiosidade
+            </button>
+
+            <p id="curiosidade">
+                Clique no botão para descobrir uma curiosidade.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>&copy; 2026 - Cinema Aurora</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

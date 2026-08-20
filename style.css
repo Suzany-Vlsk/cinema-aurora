@@ -1,0 +1,369 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #080808;
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+
+/* ==========================================
+   CABEÇALHO
+========================================== */
+
+header {
+    background-color: #000000;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 3px solid #d90429;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.6rem;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #cccccc;
+}
+
+
+/* ==========================================
+   MENU
+========================================== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid #333333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #d90429;
+    border-color: #d90429;
+    color: #ffffff;
+}
+
+nav a:active {
+    transform: scale(0.95);
+}
+
+
+/* ==========================================
+   CONTEÚDO PRINCIPAL
+========================================== */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #171717,
+        #080808
+    );
+
+    padding: 45px 20px;
+    border-radius: 12px;
+    border: 1px solid #333333;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    color: #d90429;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #dddddd;
+}
+
+
+/* ==========================================
+   TÍTULOS
+========================================== */
+
+main h2 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   CARDS DOS FILMES
+========================================== */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #151515;
+    width: 300px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #333333;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #d90429;
+    box-shadow: 0 10px 25px rgba(217, 4, 41, 0.25);
+}
+
+.card img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #bbbbbb;
+}
+
+.card span {
+    display: block;
+    color: #d90429;
+    font-size: 0.9rem;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   PAINÉIS
+========================================== */
+
+.painel {
+    background-color: #151515;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #333333;
+}
+
+.painel h2 {
+    color: #d90429;
+}
+
+
+/* ==========================================
+   FORMULÁRIOS
+========================================== */
+
+.formulario {
+    background-color: #151515;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #333333;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+label {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #444444;
+    border-radius: 6px;
+
+    background-color: #080808;
+    color: #ffffff;
+
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #d90429;
+    box-shadow: 0 0 5px rgba(217, 4, 41, 0.4);
+}
+
+
+/* ==========================================
+   BOTÕES
+========================================== */
+
+button {
+    background-color: #d90429;
+    color: #ffffff;
+
+    border: none;
+    padding: 12px 22px;
+
+    border-radius: 6px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #a90321;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(217, 4, 41, 0.3);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+
+/* ==========================================
+   RESULTADOS
+========================================== */
+
+.resultado {
+    margin-top: 20px;
+    padding: 18px;
+
+    background-color: #080808;
+    color: #ffffff;
+
+    border-radius: 8px;
+    border-left: 4px solid #d90429;
+
+    white-space: pre-line;
+}
+
+#programacao {
+    margin-top: 20px;
+    color: #ffffff;
+
+    font-size: 1.1rem;
+
+    white-space: pre-line;
+
+    background-color: #080808;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #d90429;
+}
+
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+footer {
+    text-align: center;
+
+    background-color: #000000;
+
+    color: #aaaaaa;
+
+    padding: 25px;
+
+    margin-top: 40px;
+
+    border-top: 2px solid #d90429;
+}
+
+span{
+    color: red;
+    font-size: 50px;
+
+}
+
+
+/* ==========================================
+   RESPONSIVIDADE
+========================================== */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        height: auto;
+        max-height: 450px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .hero h2 {
+        font-size: 1.7rem;
+    }
+}

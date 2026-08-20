@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cinema Aurora - Classificação</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<header>
+    <h1> Cinema<span>Aurora</span></h1>
+    <p>Seu cinema, sua experiência.</p>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="classificacao.html">Classificação</a>
+        <a href="avaliacao.html">Avaliação</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h2>Posso Assistir?</h2>
+        <p>Informe sua idade e escolha um filme.</p>
+    </section>
+
+    <section class="formulario">
+
+        <label for="idade">Sua idade:</label>
+        <input type="number" id="idade" placeholder="Digite sua idade">
+
+        <label for="filmeClassificacao">Escolha o filme:</label>
+
+        <select id="filmeClassificacao">
+            <option value="10">Devoradores de Estrela - 10 anos</option>
+            <option value="12">O Eternauta - 12 anos</option>
+            <option value="14">Segredos do Tempo - 14 anos</option>
+            <option value="16">Star Wars - 16 anos</option>
+        </select>
+
+        <button onclick="verificarClassificacao()">
+            Verificar
+        </button>
+
+        <div id="resultadoClassificacao" class="resultado">
+            Resultado aparecerá aqui.
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 - Cinema Aurora</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
